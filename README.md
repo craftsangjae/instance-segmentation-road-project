@@ -2,7 +2,7 @@
 
 ### Objective
 
-주행 중인 자동차의 영상에서 도로, 자동차, 맨홀 등을 실시간으로 파악하는 프로젝트. 실시간으로 파악할 수 있게 하기 위해서 우리는 Single-Shot Multi Detector 계통이면서, Instance Segmentation이 되는 `Retina-Mask`을 구현하였음.
+주행 중인 자동차의 영상에서 도로, 자동차, 맨홀 등을 실시간으로 파악하는 프로젝트. 실시간으로 파악할 수 있게 하기 위해서 우리는 Single-Shot Multi Detector 계통이면서, Instance Segmentation이 되는 `Retina-Mask`와 Semantic Segmentation으로 성능이 우수한 `deepLab V3+`을 결합한 `MaskLab` 모형을 구현
 
 
 
