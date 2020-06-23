@@ -4,8 +4,8 @@ Mail : rocketgrowthsj@gmail.com
 
 Reference : https://github.com/shaoanlu/AdamW-and-SGDW/blob/master/AdamW.py
 """
-from tensorflow.python.keras import backend as K
-from tensorflow.python.keras.optimizers import Optimizer
+from tensorflow.keras import backend as K
+from tensorflow.keras.optimizers import Optimizer
 
 
 class AdamW(Optimizer):

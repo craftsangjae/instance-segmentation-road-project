@@ -2,10 +2,10 @@
 Copyright 2019, SangJae Kang, All rights reserved.
 Mail : rocketgrowthsj@gmail.com
 """
-from tensorflow.python.keras.layers import Layer, Conv2D
-from tensorflow.python.keras.layers import DepthwiseConv2D
-from tensorflow.python.keras.layers import ReLU
-from tensorflow.python.keras.initializers import RandomNormalV2
+from tensorflow.keras.layers import Layer, Conv2D
+from tensorflow.keras.layers import DepthwiseConv2D
+from tensorflow.keras.layers import ReLU
+from tensorflow.keras.initializers import RandomNormal
 import tensorflow as tf
 from engine.layers.misc import MobileSeparableConv2D, SqueezeExcite
 from engine.layers.misc import ResizeLike
@@ -211,7 +211,7 @@ class SegmentationSubNet(Layer):
                                               expand_ratio=self.expand_ratio)
             else:
                 layer = Conv2D(num_features, (3, 3), activation='relu', padding='same',
-                               kernel_initializer=RandomNormalV2(stddev=0.01))
+                               kernel_initializer=RandomNormal(stddev=0.01))
             self.block.append(layer)
             layer = GroupNormalization(self.groups)
             self.block.append(layer)

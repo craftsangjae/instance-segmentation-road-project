@@ -2,14 +2,14 @@
 Copyright 2019, SangJae Kang, All rights reserved.
 Mail : rocketgrowthsj@gmail.com
 """
-from tensorflow.python.keras.layers import Input
-from tensorflow.python.keras.layers import Conv2D
-from tensorflow.python.keras.layers import ZeroPadding2D
-from tensorflow.python.keras.layers import Layer
-from tensorflow.python.keras.models import Model
-from tensorflow.python.keras.applications import ResNet50
-from tensorflow.python.keras.applications import VGG16
-from tensorflow.python.keras.applications import MobileNet
+from tensorflow.keras.layers import Input
+from tensorflow.keras.layers import Conv2D
+from tensorflow.keras.layers import ZeroPadding2D
+from tensorflow.keras.layers import Layer
+from tensorflow.keras.models import Model
+from tensorflow.keras.applications import ResNet50
+from tensorflow.keras.applications import VGG16
+from tensorflow.keras.applications import MobileNet
 from engine.normalization import GroupNormalization
 from engine.layers import Identity
 import tensorflow as tf

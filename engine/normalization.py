@@ -2,11 +2,11 @@
 Copyright 2019, SangJae Kang, All rights reserved.
 Mail : rocketgrowthsj@gmail.com
 """
-from tensorflow.python.keras.engine import Layer, InputSpec
-from tensorflow.python.keras import initializers
-from tensorflow.python.keras import regularizers
-from tensorflow.python.keras import constraints
-from tensorflow.python.keras import backend as K
+from tensorflow.keras.layers import Layer, InputSpec
+from tensorflow.keras import initializers
+from tensorflow.keras import regularizers
+from tensorflow.keras import constraints
+from tensorflow.keras import backend as K
 
 
 class GroupNormalization(Layer):

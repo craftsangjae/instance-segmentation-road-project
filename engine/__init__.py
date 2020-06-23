@@ -2,8 +2,7 @@
 Copyright 2019, SangJae Kang, All rights reserved.
 Mail : rocketgrowthsj@gmail.com
 """
-from tensorflow.python.keras.engine.base_layer import AddMetric, AddLoss
-from tensorflow.python.keras.utils import get_custom_objects
+from tensorflow.keras.utils import get_custom_objects
 from .losses import *
 from .layers import *
 from .backbone import *
@@ -72,9 +71,3 @@ get_custom_objects().update({"ClassBinaryIOU": ClassBinaryIOU,
 # Optimzier에 관련된 Custom Keras Object
 get_custom_objects().update({'AdamW': AdamW,
                              'RectifiedAdam': RectifiedAdam})
-
-# BUGS!!!> Keras 기본 인자인데, 세팅이 안되어 있어서, save Model & Load Model에서
-# 따로 지정해주어야 함
-get_custom_objects().update({'AddMetric': AddMetric,
-                             'AddLoss': AddLoss})
-

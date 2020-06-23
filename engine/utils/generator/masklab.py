@@ -2,7 +2,7 @@
 Copyright 2019, SangJae Kang, All rights reserved.
 Mail : rocketgrowthsj@gmail.com
 """
-from tensorflow.python.keras.utils import Sequence
+from tensorflow.keras.utils import Sequence
 from ..dataset import MaskLabDataset
 from ..dataset import Dataset
 import cv2

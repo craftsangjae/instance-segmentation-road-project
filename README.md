@@ -1,10 +1,21 @@
-# RetinaMask 구현하기
+## MaskLab : Instance & Semantic Segmentation 
 
-## Objective
+### Objective
 
-> 주행 중인 자동차의 영상에서 도로, 자동차, 맨홀 등을 실시간으로 파악하는 프로젝트. 실시간으로 파악할 수 있게 하기 위해서 우리는 Single-Shot Multi Detector 계통이면서, Instance Segmentation이 되는 `Retina-Mask`을 구현
+주행 중인 자동차의 영상에서 도로, 자동차, 맨홀 등을 실시간으로 파악하는 프로젝트. 실시간으로 파악할 수 있게 하기 위해서 우리는 Single-Shot Multi Detector 계통이면서, Instance Segmentation이 되는 `Retina-Mask`을 구현하였음.
 
-## 디렉토리 구성
+
+
+### 구현 모델 MaskLab
+
+![Imgur](https://imgur.com/S4NJOYT.png)
+
+프로젝트를 수행하기 위해 개발한 모형은 MaskLab으로, [Retina**Mask**](https://arxiv.org/pdf/1901.03353.pdf) + [deep**Lab**](https://arxiv.org/pdf/1802.02611.pdf)을 결합하였습니다. 동일한 Backbone을 공유하고 있고, 크게 3가지 형태의 출력값을 반환합니다.
+RetinaMask는 Instance Segmentation를 수행하고, DeepLab은 Semantic Segmentation을 수행합니다. MaskLab 모델은 One-Time Inference로 동시에 두가지 Task를 수행합니다.
+
+
+
+### 디렉토리 구성
 
 ```` markdown
 |- models/ : RetinaMask & DeepLab V3+ Model에 관련된 정보들 
@@ -31,13 +42,3 @@
 |- scripts/ : DeepLab V3+ & RetinaMask를 통해 작업을 수행하는 것을 기록한 Jupyter Notebook Scripts
 |- examples/ : 모델 동작에 대한 여러 Sample Scripts 
 ````
-
-## Reference
-
-#### Paper
-
-1. [retinamask](https://arxiv.org/pdf/1901.03353.pdf)
-2. [retinanet](https://arxiv.org/abs/1708.02002)
-3. [SSD](https://arxiv.org/abs/1512.02325)
-4. [Mask R-CNN](https://arxiv.org/abs/1703.06870)
-

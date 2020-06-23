@@ -6,10 +6,10 @@ from engine.layers.misc import SqueezeExcite, MobileSeparableConv2D, MoldBatch
 from engine.layers.detection import CalculateIOU
 from engine.layers.detection import NormalizeBoxes
 from engine.normalization import GroupNormalization
-from tensorflow.python.keras.layers import Layer, Concatenate
-from tensorflow.python.keras.layers import Conv2D, Conv2DTranspose
-from tensorflow.python.keras.initializers import RandomNormal
-from tensorflow.python.keras import backend as K
+from tensorflow.keras.layers import Layer, Concatenate
+from tensorflow.keras.layers import Conv2D, Conv2DTranspose
+from tensorflow.keras.initializers import RandomNormal
+from tensorflow.keras import backend as K
 import tensorflow as tf
 
 

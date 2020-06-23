@@ -2,10 +2,10 @@
 Copyright 2019, SangJae Kang, All rights reserved.
 Mail : rocketgrowthsj@gmail.com
 """
-from tensorflow.python.keras.layers import Layer, Conv2D, Add
-from tensorflow.python.keras.layers import Concatenate, Reshape
-from tensorflow.python.keras.initializers import RandomNormal, Constant
-from tensorflow.python.keras import backend as K
+from tensorflow.keras.layers import Layer, Conv2D, Add
+from tensorflow.keras.layers import Concatenate, Reshape
+from tensorflow.keras.initializers import RandomNormal, Constant
+from tensorflow.keras import backend as K
 import tensorflow as tf
 import numpy as np
 from engine.prior import PriorBoxes

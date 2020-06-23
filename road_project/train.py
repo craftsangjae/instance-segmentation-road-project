@@ -5,7 +5,6 @@ Mail : rocketgrowthsj@gmail.com
 from mlflow import log_param, log_metric, log_artifact
 import os
 import numpy as np
-import tensorflow as tf
 import sys
 import cv2
 from tqdm import tqdm
@@ -18,9 +17,7 @@ from engine.train import train_masklab_model, construct_masklabdataset
 from engine.config import ModelConfiguration
 from engine.retinamasklab import load_masklab_inference_model_from_h5
 
-tf.logging.set_verbosity(tf.logging.ERROR)
-
-# Default Configuration For Hyundai
+# Default Configuration For road project
 config = ModelConfiguration()
 
 # Dataset 관련 Configuration

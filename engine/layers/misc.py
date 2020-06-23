@@ -2,8 +2,8 @@
 Copyright 2019, SangJae Kang, All rights reserved.
 Mail : rocketgrowthsj@gmail.com
 """
-from tensorflow.python.keras.layers import Layer, GlobalAveragePooling2D, Dense
-from tensorflow.python.keras.layers import Conv2D, ReLU, Add, DepthwiseConv2D
+from tensorflow.keras.layers import Layer, GlobalAveragePooling2D, Dense
+from tensorflow.keras.layers import Conv2D, ReLU, Add, DepthwiseConv2D
 from engine.normalization import GroupNormalization
 import tensorflow as tf
 import numpy as np

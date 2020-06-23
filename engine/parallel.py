@@ -13,9 +13,9 @@ https://github.com/fchollet/keras/blob/master/keras/setup/training_utils.py
 https://github.com/matterport/Mask_RCNN/issues/958#issuecomment-428258290
 """
 import tensorflow as tf
-from tensorflow.python.keras import backend as K
-from tensorflow.python.keras.layers import Lambda, Concatenate
-from tensorflow.python.keras.models import Model
+from tensorflow.keras import backend as K
+from tensorflow.keras.layers import Lambda, Concatenate
+from tensorflow.keras.models import Model
 
 
 class ParallelModel(Model):

@@ -4,11 +4,11 @@ Mail : rocketgrowthsj@gmail.com
 """
 import os
 import warnings
-from tensorflow.python.keras import layers
-from tensorflow.python.keras.layers import Layer
-from tensorflow.python.keras import backend
-from tensorflow.python.keras import models
-from tensorflow.python.keras import utils
+from tensorflow.keras import layers
+from tensorflow.keras.layers import Layer
+from tensorflow.keras import backend
+from tensorflow.keras import models
+from tensorflow.keras import utils
 import tensorflow as tf
 
 BASE_WEIGHTS_PATH = (

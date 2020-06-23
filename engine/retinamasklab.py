@@ -4,9 +4,9 @@ Mail : rocketgrowthsj@gmail.com
 """
 import time
 import re
-from tensorflow.python.keras.models import Model, load_model
-from tensorflow.python.keras import backend as K
-from tensorflow.python.keras.layers import Input, Concatenate
+from tensorflow.keras.models import Model, load_model
+from tensorflow.keras import backend as K
+from tensorflow.keras.layers import Input, Concatenate
 from engine.utils import MaskLabDataset
 from engine.prior import PriorBoxes
 from engine.losses import ClassLoss, BoxLoss, SegLoss, MaskLoss

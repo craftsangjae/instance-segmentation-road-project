@@ -4,8 +4,8 @@ Mail : rocketgrowthsj@gmail.com
 
 Reference : https://github.com/bckenstler/CLR/blob/master/clr_callback.py
 """
-from tensorflow.python.keras.callbacks import Callback
-from tensorflow.python.keras import backend as K
+from tensorflow.keras.callbacks import Callback
+from tensorflow.keras import backend as K
 import numpy as np
 import os
 
